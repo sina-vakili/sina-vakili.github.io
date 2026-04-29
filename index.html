@@ -10,6 +10,8 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .mono { font-family: 'Fira Code', monospace; }
+        
+        .glass-nav { background: rgba(15, 23, 42, 0.2); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .accent-glow:hover { box-shadow: 0 0 20px rgba(56, 189, 248, 0.4); transition: all 0.3s ease; }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -17,7 +19,7 @@
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 glass">
+    <nav class="fixed w-full z-50 glass-nav">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-xl font-bold tracking-tighter mono"><span class="text-sky-400">&lt;</span>SINA.V<span class="text-sky-400">/&gt;</span></div>
             <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
@@ -31,12 +33,12 @@
 
     <header class="h-screen flex items-center justify-center pt-20 px-6">
         <div class="text-center">
-            <p class="mono text-sky-400 mb-4">[cite: 4] System & Network Administrator</p>
+            <p class="mono text-sky-400 mb-4 tracking-widest text-sm italic">System & Network Administrator </p>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
                 Sina Vakili <br/><span class="gradient-text">Tazehkandi</span>
             </h1>
             <p class="max-w-2xl mx-auto text-slate-400 text-lg mb-10">
-                [cite: 4, 6] Designing secure private networks and IT infrastructure with over 4 years of expertise in Cisco, MikroTik, and virtualization.
+                Designing secure private networks and IT infrastructure with over 4 years of expertise in Cisco, MikroTik, and virtualization. 
             </p>
             <div class="flex justify-center gap-4">
                 <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold transition">Get In Touch</a>
@@ -48,28 +50,31 @@
     <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h2 class="text-3xl font-bold border-l-4 border-sky-500 pl-4">About Me</h2>
+                <h2 class="text-3xl font-bold border-l-4 border-sky-500 pl-4 italic">About Me</h2>
                 <p class="text-slate-400 leading-relaxed">
-                    [cite: 3, 26, 27] Based in Istanbul, I am currently pursuing a Master’s in Information Technology at Nişantaşı University. With a foundation in Electrical Engineering, I specialize in bridging the gap between hardware telecommunications and complex software-defined networking.
+                    I’m a Network Engineer based in Istanbul with over 4 years of experience in designing, implementing, and optimizing 		secure enterprise networks. I specialize in Cisco and MikroTik technologies, with hands-on expertise in routing, 			switching, and virtualization.
+		</p>
+		<p class="text-slate-400 leading-relaxed">
+		I enjoy solving complex network challenges and building reliable infrastructures that support business growth. Currently, 		I’m expanding my knowledge in IT systems and continuously improving my skills to stay up to date with modern technologies.
                 </p>
                 <div class="glass p-6 rounded-xl">
                     <h3 class="mono text-sky-400 mb-2">Education</h3>
-                    <p class="text-sm font-semibold">[cite: 26] M.S. in Information Technology</p>
-                    <p class="text-xs text-slate-500 mb-3">Nişantaşı University (2025 - Present)</p>
-                    <p class="text-sm font-semibold">[cite: 27] B.S. in Electrical Engineering</p>
-                    <p class="text-xs text-slate-500">Urmia Azad University (2014 - 2019)</p>
+                    <p class="text-sm font-semibold italic">Master in Information Technology</p>
+                    <p class="text-xs text-slate-500 mb-3">Nişantaşı University (2025 - Present) </p>
+                    <p class="text-sm font-semibold italic">B.S. in Electrical Engineering</p>
+                    <p class="text-xs text-slate-500">Urmia Azad University (2014 - 2019) </p>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <div class="glass p-8 rounded-2xl text-center accent-glow">
                     <i data-lucide="server" class="mx-auto mb-4 text-sky-400"></i>
-                    <div class="text-2xl font-bold">4+</div>
-                    <div class="text-xs text-slate-500 uppercase tracking-widest">Years Experience</div>
+                    <div class="text-2xl font-bold italic">4 Years</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-widest">Experience </div>
                 </div>
                 <div class="glass p-8 rounded-2xl text-center accent-glow">
                     <i data-lucide="shield-check" class="mx-auto mb-4 text-sky-400"></i>
                     <div class="text-2xl font-bold">97%</div>
-                    <div class="text-xs text-slate-500 uppercase tracking-widest">Uptime Record</div>
+                    <div class="text-xs text-slate-500 uppercase tracking-widest">Network Uptime </div>
                 </div>
             </div>
         </div>
@@ -77,36 +82,36 @@
 
     <section id="skills" class="py-24 bg-slate-900/50 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16 underline decoration-sky-500 underline-offset-8">Technical Expertise</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 class="text-3xl font-bold text-center mb-16 underline decoration-sky-500 underline-offset-8 italic">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div class="glass p-6 rounded-xl hover:translate-y-[-5px] transition-transform">
-                    <i data-lucide="network" class="text-sky-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-4">Cisco Networking</h3>
+                    <i data-lucide="network" class="text-sky-400 mb-4 mx-auto md:mx-0"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">Cisco & MikroTik</h3>
                     <ul class="text-slate-400 text-sm space-y-2 mono">
-                        <li>[cite: 8] Routing (BGP, OSPF, EIGRP)</li>
-                        <li>[cite: 9] Switching (VLAN, STP)</li>
-                        <li>[cite: 9] Security (NAT, DHCP)</li>
-                        <li>[cite: 5] CCNA & ENCOR Level</li>
+                        <li>Routing: BGP, EIGRP, OSPF </li>
+                        <li>Switching: VLAN, DHCP, STP, NAT </li>
+                        <li>MikroTik: Routing, Switching, VPN </li>
+                        <li>Troubleshooting & Optimization</li>
                     </ul>
                 </div>
                 <div class="glass p-6 rounded-xl hover:translate-y-[-5px] transition-transform">
-                    <i data-lucide="cpu" class="text-sky-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-4">Systems & Virtualization</h3>
+                    <i data-lucide="cpu" class="text-sky-400 mb-4 mx-auto md:mx-0"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">Systems & Virtualization</h3>
                     <ul class="text-slate-400 text-sm space-y-2 mono">
-                        <li>[cite: 10] MikroTik MTCNA</li>
-                        <li>[cite: 13, 14] VMware ESXi / Hyper-V</li>
-                        <li>[cite: 13] Windows Server (MCSE)</li>
-                        <li>[cite: 14] Zabbix Monitoring</li>
+                        <li>VMware ESXi & Hyper-V </li>
+                        <li>Windows Server (MCSE 2016R) </li>
+                        <li>Monitoring: Zabbix </li>
+                        <li>Passive Infrastructure </li>
                     </ul>
                 </div>
                 <div class="glass p-6 rounded-xl hover:translate-y-[-5px] transition-transform">
-                    <i data-lucide="users" class="text-sky-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-4">Soft Skills</h3>
+                    <i data-lucide="languages" class="text-sky-400 mb-4 mx-auto md:mx-0"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">Languages</h3>
                     <ul class="text-slate-400 text-sm space-y-2 mono">
-                        <li>[cite: 17, 18] Team Leadership</li>
-                        <li>[cite: 21] Resource Management</li>
-                        <li>[cite: 24, 25] Enterprise Support</li>
-                        <li>[cite: 29, 30] Multilingual Support</li>
+                        <li>English: Fluent </li>
+                        <li>Turkish: Fluent </li>
+                        <li>Persian: Native </li>
+                        <li>Germany: A2 </li>
                     </ul>
                 </div>
             </div>
@@ -114,42 +119,41 @@
     </section>
 
     <section id="experience" class="py-24 px-6 max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 border-l-4 border-sky-500 pl-4">Work Experience</h2>
-        
+        <h2 class="text-3xl font-bold mb-12 border-l-4 border-sky-500 pl-4 italic">Work Experience</h2>
         <div class="space-y-12">
             <div class="relative pl-8 border-l border-slate-700">
                 <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-2 top-1 shadow-[0_0_10px_#0ea5e9]"></div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">[cite: 12] Network Engineer (Self-Employed)</h3>
-                    <span class="text-sky-400 mono text-sm">2025 - Present</span>
+                    <h3 class="text-xl font-bold">Network Engineer (Self-Employee) </h3>
+                    <span class="text-sky-400 mono text-sm">MAY 2025 - PRESENT</span>
                 </div>
-                <p class="text-slate-400 mb-4">[cite: 14, 15] Freelance consulting focused on virtualization (VMware/Hyper-V) and Zabbix monitoring deployments for small to medium enterprises.</p>
+                <p class="text-slate-400 italic">Designing, optimizing Cisco & MikroTik devices and managing virtualization solutions.</p>
             </div>
 
             <div class="relative pl-8 border-l border-slate-700">
                 <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-2 top-1"></div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">[cite: 17] Network Team Manager</h3>
-                    <span class="text-slate-500 mono text-sm">2024 - 2025</span>
+                    <h3 class="text-xl font-bold italic">Network Team Manager </h3>
+                    <span class="text-slate-500 mono text-sm">OCT 2024 - MAY 2025</span>
                 </div>
-                <p class="text-slate-500 italic mb-2">[cite: 16] Ertebat Sazan Emen Adak</p>
-                <p class="text-slate-400">[cite: 19] Led design and maintenance for bank networks. Achieved 97% network uptime across West Azerbaijan province.</p>
+                <p class="text-slate-500 italic mb-2">Ertebat Sazan Emen Adak </p>
+                <p class="text-slate-400">Led private network design for banks and organizations with 97% network uptime. </p>
             </div>
 
             <div class="relative pl-8 border-l border-slate-700">
                 <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-2 top-1"></div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">[cite: 22] Telecommunications Technical Expert</h3>
-                    <span class="text-slate-500 mono text-sm">2021 - 2024</span>
+                    <h3 class="text-xl font-bold italic">Telecommunications Technical Expert </h3>
+                    <span class="text-slate-500 mono text-sm">DEC 2021 - OCT 2024</span>
                 </div>
-                <p class="text-slate-400">[cite: 24, 25] Developed private network infrastructure and deployed Neuronta communication systems for enterprise clients.</p>
+                <p class="text-slate-400">Developed private network infrastructures and security systems for enterprise-level clients.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="py-24 bg-slate-900/50 px-6">
         <div class="max-w-xl mx-auto glass p-10 rounded-3xl">
-            <h2 class="text-3xl font-bold text-center mb-8">Let's Connect</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 italic">Contact</h2>
             <div class="space-y-6">
                 <a href="mailto:sinavakili13@gmail.com" class="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-800 transition group">
                     <div class="bg-sky-500/10 p-3 rounded-lg group-hover:bg-sky-500/20 transition">
@@ -157,16 +161,16 @@
                     </div>
                     <div>
                         <p class="text-xs text-slate-500 uppercase tracking-tighter">Email Me</p>
-                        <p class="font-semibold">[cite: 2] sinavakili13@gmail.com</p>
+                        <p class="font-semibold">sinavakili13@gmail.com </p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/sina-vakili-tazehkandi" class="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-800 transition group">
+                <a href="https://www.linkedin.com/in/sina-vakili-tazehkandi" target="_blank" class="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-800 transition group">
                     <div class="bg-sky-500/10 p-3 rounded-lg group-hover:bg-sky-500/20 transition">
                         <i data-lucide="linkedin" class="text-sky-400"></i>
                     </div>
                     <div>
                         <p class="text-xs text-slate-500 uppercase tracking-tighter">Professional Profile</p>
-                        <p class="font-semibold">linkedin.com/in/sina-vakili-tazehkandi</p>
+                        <p class="font-semibold text-sm">linkedin.com/in/sina-vakili-tazehkandi </p>
                     </div>
                 </a>
                 <div class="flex items-center gap-4 p-4 rounded-xl">
@@ -175,36 +179,19 @@
                     </div>
                     <div>
                         <p class="text-xs text-slate-500 uppercase tracking-tighter">Location</p>
-                        <p class="font-semibold">[cite: 2] Istanbul, Turkey</p>
+                        <p class="font-semibold">Istanbul, Turkey </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-500 text-sm mono">
-        &copy; 2026 Sina Vakili. Built with Lucide & Tailwind.
+    <footer class="py-10 text-center text-slate-600 text-xs mono uppercase tracking-widest">
+        &copy; 2026 Sina Vakili. All rights reserved.
     </footer>
 
     <script>
-        // Initialize Icons
         lucide.createIcons();
-
-        // Smooth reveal on scroll
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            observer.observe(section);
-        });
     </script>
 </body>
 </html>
